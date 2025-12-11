@@ -106,9 +106,9 @@ abstract fun render(): Unit
 
 ---
 
-#### Метод 5: getDuration(): Int
+#### Метод 5: getDurationFun(): Int
 ```kotlin
-abstract fun getDuration(): Int
+abstract fun getDurationFun(): Int
 ```
 **Описание:** Вернуть оставшуюся длительность эффекта в секундах.
 
@@ -215,7 +215,7 @@ intensity = 100 (максимум)
 
 ---
 
-#### Метод: getDuration(): Int
+#### Метод: getDurationFun(): Int
 **Логика:**
 1. Вернуть текущее значение `duration`
 
@@ -320,7 +320,7 @@ intensity = 60 (средний эффект)
 
 ---
 
-#### Метод: getDuration(): Int
+#### Метод: getDurationFun(): Int
 **Логика:**
 1. Вернуть текущее значение `duration`
 
@@ -439,7 +439,7 @@ intensity = 50 (средний эффект)
 
 ---
 
-#### Метод: getDuration(): Int
+#### Метод: getDurationFun(): Int
 **Логика:**
 1. Вернуть текущее значение `duration`
 
@@ -491,7 +491,7 @@ sunBless.activate()  // Активируется
 // Обновление каждый ход
 for (i in 1..5) {
     sunBless.updateEffect()  // Выводит восстановление HP
-    println("Длительность: ${sunBless.getDuration()}")  // 599, 598, 597...
+    println("Длительность: ${sunBless.getDurationFun()}")  // 599, 598, 597...
 }
 
 sunBless.render()  // Показывает золотистый эффект
@@ -542,7 +542,7 @@ fog.render()  // Показывает серую дымку с текущей в
 - [ ] Методы `updateEffect()` правильно уменьшают duration
 - [ ] Специальные механики работают (SunBless исцеляет, Fog рассеивается и т.д.)
 - [ ] Вывод сообщений информативен и включает эмодзи
-- [ ] Методы `getDuration()` возвращают правильные значения
+- [ ] Методы `getDurationFun()` возвращают правильные значения
 - [ ] Код скомпилирован без ошибок
 - [ ] В файле TestClasses создана функция тестирования класса
 - [ ] Тестирование всех сценариев завершено
